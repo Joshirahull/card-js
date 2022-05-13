@@ -1,0 +1,67 @@
+*{
+	padding:0px;
+	margin:0px;
+	box-sizing:border-box;
+	/* font-family: 'Orbitron', sans-serif; */
+}
+.Card{
+	height:100%;
+	width:100%;
+}
+.myCard{
+	position:relative;
+	
+}
+
+.myCard img{
+	height:300px;
+	width:100%;
+	object-fit: cover;
+	
+}
+.Id{
+    top: 1px;
+    left: 18px;
+    position: absolute;
+	color:#fff;
+	opacity:0;
+	transition: all .5s ease-in-out;
+}
+.albumId {
+    top: 0;
+    right: 18px;
+    position: absolute;
+	color:#fff;
+	opacity:0;
+	transition: all .5s ease-in-out;
+}
+.title{
+	top:0;
+	left:0;
+	position:absolute;
+	height:100%;
+	width:100%;
+	background-color:rgba(0,0,0,0.3);
+	transform:scale(0);
+	transition: all .3s ease-in-out;
+}
+.title span{
+    top: 50%;
+    left: 50%;
+	width:100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+	color:#fff;
+	text-align:center;
+	line-height:1;
+}
+.myCard:hover .Id,
+
+.myCard:hover .albumId{
+	opacity:1;
+	
+}
+
+.myCard:hover .title{
+	transform:scale(1);
+}
